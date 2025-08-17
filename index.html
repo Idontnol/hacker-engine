@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Engine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="outer-container"> 
+        <div class="container">
+            <h1>Hacker Engine</h1>
+            <p>Enter a 3-digit code and watch the Hacker find it instantly!</p>
+
+            <div id="setup-screen" class="screen active">
+                <div class="code-input">
+                    <input type="number" id="digit1" min="0" max="9" maxlength="1" class="digit-box" required>
+                    <input type="number" id="digit2" min="0" max="9" maxlength="1" class="digit-box" required>
+                    <input type="number" id="digit3" min="0" max="9" maxlength="1" class="digit-box" required>
+                </div>
+                <button id="startButton"><p>Start Engine </p><img src="./rocket2.png" class="short" /> </button>
+            </div>
+
+            <div id="blasting-screen" class="screen">
+                <div class="blaster-display">
+                    <span id="currentGuess">000</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar"></div>
+                </div>
+                <p id="statusText">Hacking...</p>
+            </div>
+        </div>        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
