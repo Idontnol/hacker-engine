@@ -80,5 +80,5 @@ function runBlaster() {
         if (guessCounter > 999) {
             clearInterval(intervalId);
         }
-    }, 100); 
+    }, 6); 
 }
